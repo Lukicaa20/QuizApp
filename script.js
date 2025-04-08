@@ -1,11 +1,5 @@
 "use strict";
 
-/* Na početku sam imao probleme u razumijevanju sinkronog koda, točnije nisam razumio kako nakon fetcha nisam mogao vidjeti pitanja u quizQuestions
-varijabli u global scope-u, nakon pomoći prijatelja i interneta skuzio sam ono sto sam vec u biti znao a to je da u sinkronom kodu skripta nece cekati fetch da spremi 
-u varijablu ono što je dohvatio nego ce proci dalje i ucitati sav ostali kod, ali to nije znak da nije spremljeno nego mi u biti moramo raditi s onim sto će se dogoditi u 
-budućnosti. Preko event listenera koji su asinkroni sam skuzio prakticki sve, jer kad se oni aktiviraju ponovo se vrti cijela skripta i tad mozemo vidjeti da fetch radi
-i da je varijabla popunjena */
-
 // Varijabla u koju ćemo spremiti pitanja nakon fetcha
 let quizQuestions = [];
 
@@ -62,7 +56,7 @@ function loadQuestion() {
   //E sad, možda najbitnije sto sam napravio je da sam odustao od hardcodeiranja. Prijašnji kod je izgledao tako da sam pravio varijable zasebno za svaki button, to je rezultiralo
   //neuspijehom jer kad su se pojavila pitanja sa više ili manje od 4 točna odgovora događalo mi se to da je jedno mjesto ostalo prazno ako su samo tri ponuđena odgovora ili da neki
   //odgovori nisu uopće ni prikazani jer ih je bilo više od 4, a ja sam napravio samo 4 button-a. Nadalje, for petlja mi je jos prije pala na pamet ali sam odustao jer kada bih
-  // npr. deklarirao varijablu const button1 = nesto svakom iteracijom for petlja bi napravila varijablu istog imena sto nije dozvoljeno. Pitao sam chat gpt i ovo je bio njegov odgovor
+  // npr. deklarirao varijablu const button1 = nesto; svakom iteracijom for petlja bi napravila varijablu istog imena sto nije dozvoljeno. Pitao sam chat gpt i ovo je bio njegov odgovor
 
   /* When you use const or let within a loop, JavaScript creates a new, separate "block scope" for each iteration.
   So, if you declare const button inside a loop, JavaScript treats each button as a separate instance, 
