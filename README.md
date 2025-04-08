@@ -1,65 +1,53 @@
+Luka's Quiz App
+Ovo je jednostavna web aplikacija za kviz koja koristi pitanja vezana za Linux, omogućujući korisnicima da odgovaraju na pitanja i prate svoj rezultat. Aplikacija uključuje vremensko ograničenje za odgovor na svako pitanje i omogućuje ponovni početak kviza.
 
-# Luka's Quiz App
+🎯 Opis
+Kviz s 5 pitanja omogućuje korisnicima da odgovaraju na pitanja u formi višestrukih izbora. Aplikacija prati broj točnih odgovora i prikazuje rezultat na kraju kviza. Također, omogućava ponovni pokušaj kviza nakon završetka.
 
-Luka's Quiz App je jednostavna aplikacija za kviz koja omogućuje korisnicima da odgovaraju na pitanja vezana uz Linux, s interaktivnim sučeljem i automatskim praćenjem rezultata.
+⚙️ Tehnologije
+HTML
 
-## Pregled
+CSS (ugrađeno unutar JS)
 
-Aplikacija koristi vanjski API za dohvat kviz pitanja, a korisnicima omogućava odabir odgovora, s prikazivanjem točnih i netočnih odgovora u stvarnom vremenu. Nakon što odgovore na sva pitanja, korisnici mogu vidjeti svoj rezultat i ponovo započeti kviz.
+JavaScript (vanilla, bez frameworka)
 
-## Funkcionalnosti
+✅ Funkcionalnosti
+Prikazivanje pitanja i odgovora
 
-- **Startanje kviza**: Nakon što korisnik klikne na "Start Quiz", aplikacija dohvaća 5 pitanja s API-ja i prikazuje ih jedan po jedan.
-- **Odgovaranje na pitanja**: Svako pitanje ima do četiri ponuđena odgovora, a korisnik odabire jedan od njih.
-- **Ocjenjivanje**: Nakon što korisnik odgovori na pitanje, odgovori se označavaju kao točni (zelena boja) ili netočni (crvena boja).
-- **Nastavak**: Korisnik može kliknuti na "Next" kako bi prešao na sljedeće pitanje.
-- **Završetak kviza**: Nakon što su sva pitanja odgovarana, prikazuje se rezultat (broj točnih odgovora).
-- **Ponovno pokušavanje**: Korisnik može ponovo započeti kviz klikom na "Try again".
+Praćenje broja točnih odgovora
 
-## Tehnologije
+Vremensko ograničenje za odgovor na svako pitanje
 
-- **HTML**: Struktura stranice, uključujući prikaz pitanja, odgovora i gumba.
-- **CSS**: Stiliziranje elemenata kako bi aplikacija izgledala privlačno i bila user-friendly.
-- **JavaScript**: Logika aplikacije, uključujući dohvat podataka s API-ja, provjeru točnih odgovora i kontrolu toka kviza.
+Prikazivanje rezultata na kraju kviza
 
-## Instalacija
+Automatski restart kviza nakon završetka
 
-1. Kloniraj repozitorij:
+Prikazivanje poruke o grešci u slučaju problema pri dohvaćanju pitanja
 
-```bash
-git clone https://github.com/your-username/quiz-app.git
-```
+▶️ Pokretanje
+Preuzmi projekt ili ga kloniraj:
 
-2. Odi u direktorij projekta:
+bash
+Copy
+Edit
+git clone https://github.com/tvoje-korisnicko-ime/quiz-app.git
+Otvori index.html u pregledniku (dvostruki klik je dovoljan).
 
-```bash
-cd quiz-app
-```
+📁 Struktura
+pgsql
+Copy
+Edit
+📦 quiz-app
+├── index.html
+├── script.js
+├── style.css
+└── README.md
+📝 Plan za budućnost
+Dodavanje novih kategorija pitanja
 
-3. Otvori `index.html` u svom omiljenom pregledniku.
+Implementacija sustava za više korisnika
 
-## Kako koristiti
+Spremanje rezultata u localStorage
 
-1. Klikni na **Start Quiz** da započneš kviz.
-2. Odgovori na pitanja klikom na jedan od ponuđenih odgovora.
-3. Klikni na **Next** da prijeđeš na sljedeće pitanje.
-4. Nakon zadnjeg pitanja, bit će prikazan rezultat kviza.
-5. Ako želiš, možeš kliknuti na **Try again** da ponoviš kviz.
-
-## Kako dodati nova pitanja
-
-Pitanja se dohvaćaju s vanjskog API-ja (QuizAPI). Ako želiš promijeniti kategoriju pitanja, možeš to učiniti izmjenom URL-a u JavaScript datoteci:
-
-```javascript
-const response = await fetch("https://quizapi.io/api/v1/questions?apiKey=YOUR_API_KEY&limit=5&category=Linux");
-```
-
-Zamijeni `category=Linux` s bilo kojom drugom dostupnom kategorijom.
-
-## O autoru
-
-Ovu aplikaciju izradio je **Luka**, strastveni programer s fokusom na front-end razvoj.
-
-## Licenca
-
-Ovaj projekt je licenciran pod MIT licencom. Pogledaj `LICENSE` za više informacija.
+🙌 Autor
+Luka Kolak
