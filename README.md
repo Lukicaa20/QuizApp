@@ -1,53 +1,47 @@
-Luka's Quiz App
+# Luka's Quiz App
+
 Ovo je jednostavna web aplikacija za kviz koja koristi pitanja vezana za Linux, omogućujući korisnicima da odgovaraju na pitanja i prate svoj rezultat. Aplikacija uključuje vremensko ograničenje za odgovor na svako pitanje i omogućuje ponovni početak kviza.
 
-🎯 Opis
+## 🎯 Opis
+
 Kviz s 5 pitanja omogućuje korisnicima da odgovaraju na pitanja u formi višestrukih izbora. Aplikacija prati broj točnih odgovora i prikazuje rezultat na kraju kviza. Također, omogućava ponovni pokušaj kviza nakon završetka.
 
-⚙️ Tehnologije
-HTML
+## ⚙️ Tehnologije
 
-CSS (ugrađeno unutar JS)
+- **HTML**
+- **CSS** (ugrađeno unutar JS)
+- **JavaScript** (vanilla, bez frameworka)
 
-JavaScript (vanilla, bez frameworka)
+## ✅ Funkcionalnosti
 
-✅ Funkcionalnosti
-Prikazivanje pitanja i odgovora
+- **Prikazivanje pitanja i odgovora**
+- **Praćenje broja točnih odgovora**
+- **Vremensko ograničenje za odgovor na svako pitanje**
+- **Prikazivanje rezultata na kraju kviza**
+- **Automatski restart kviza nakon završetka**
+- **Prikazivanje poruke o grešci u slučaju problema pri dohvaćanju pitanja**
 
-Praćenje broja točnih odgovora
+## ▶️ Pokretanje
 
-Vremensko ograničenje za odgovor na svako pitanje
+1. **Preuzmi projekt ili ga kloniraj:**
 
-Prikazivanje rezultata na kraju kviza
+   ```bash
+   git clone https://github.com/tvoje-korisnicko-ime/quiz-app.git
 
-Automatski restart kviza nakon završetka
+   ```
 
-Prikazivanje poruke o grešci u slučaju problema pri dohvaćanju pitanja
+2. -**Otvorite `index.html` u pregledniku** (dvostruki klik je dovoljan).
 
-▶️ Pokretanje
-Preuzmi projekt ili ga kloniraj:
+## 📁 Struktura
 
-bash
-Copy
-Edit
-git clone https://github.com/tvoje-korisnicko-ime/quiz-app.git
-Otvori index.html u pregledniku (dvostruki klik je dovoljan).
+📦 quiz-app ├── index.html ├── script.js ├── style.css └── README.md
 
-📁 Struktura
-pgsql
-Copy
-Edit
-📦 quiz-app
-├── index.html
-├── script.js
-├── style.css
-└── README.md
-📝 Plan za budućnost
-Dodavanje novih kategorija pitanja
+## 📝 Plan za budućnost
 
-Implementacija sustava za više korisnika
+- Dodavanje novih kategorija pitanja
+- Implementacija sustava za više korisnika
+- Spremanje rezultata u localStorage
 
-Spremanje rezultata u localStorage
+## 🙌 Autor
 
-🙌 Autor
-Luka Kolak
+**Luka Kolak**
